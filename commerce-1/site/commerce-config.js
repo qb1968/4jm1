@@ -30,7 +30,9 @@ function getProviderName() {
       : process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN
       ? '@vercel/commerce-shopify'
       : process.env.NEXT_PUBLIC_SWELL_STORE_ID
-      ? '@vercel/commerce-swell'
+          ? '@vercel/commerce-swell'
+      :  process.env.NEXT_PUBLIC_COMMERCEJS_PUBLIC_KEY
+          ? '@vercel/commerce-commercejs'
       : '@vercel/commerce-local')
   )
 }
