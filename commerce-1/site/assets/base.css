@@ -30,8 +30,7 @@
   --accent-7: #333333;
   --accent-8: #111111;
   --accent-9: #000;
-  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
-    'Helvetica', sans-serif;
+  
 }
 
 [data-theme='dark'] {
@@ -69,11 +68,11 @@ body {
   height: 100%;
   box-sizing: border-box;
   touch-action: manipulation;
-  font-family: var(--font-sans);
+  font-family: 'Dancing Script', cursive;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
+  background-color: #f1f3F5;
   color: var(--text-primary);
   overscroll-behavior-x: none;
 }

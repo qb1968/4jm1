@@ -20,17 +20,16 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
       <div className={s.nav}>
         <div className="flex items-center flex-1">
           <Link href="/" className={s.logo} aria-label="Logo">
-            <Logo />
+            <img style={{ height: 200,backgroundColor:"white" }}src="https://cdn.shopify.com/s/files/1/0614/7840/4319/files/opt_1_250x.png?v=1673795539" />
           </Link>
           <nav className={s.navMenu}>
-            <Link href="/search" className={s.link}>
-              All
+            <Link href="/search" className={s.link} style={{fontSize:"24px",color:"black",fontWeight:"bold"}}>
+              SHOP
             </Link>
-            {links?.map((l) => (
-              <Link href={l.href} key={l.href} className={s.link}>
-                {l.label}
-              </Link>
-            ))}
+            <Link href="/search" className={s.link} style={{fontSize:"24px",color:"black",fontWeight:"bold"}}>
+             ABOUT
+            </Link>
+            
           </nav>
         </div>
         {process.env.COMMERCE_SEARCH_ENABLED && (
@@ -45,7 +44,9 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
       {process.env.COMMERCE_SEARCH_ENABLED && (
         <div className="flex pb-4 lg:px-6 lg:hidden">
           <Searchbar id="mobile-search" />
+           
         </div>
+        
       )}
     </Container>
   </NavbarRoot>

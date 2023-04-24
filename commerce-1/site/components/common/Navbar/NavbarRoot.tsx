@@ -24,7 +24,7 @@ const NavbarRoot: FC<{ children?: ReactNode }> = ({ children }) => {
   }, [hasScrolled])
 
   return (
-    <div className={cn(s.root, { 'shadow-magical': hasScrolled })}>
+    <div style={{backgroundColor:"#D188A3A8"}} className={cn(s.root, { 'shadow-magical': hasScrolled })}>
       {children}
     </div>
   )

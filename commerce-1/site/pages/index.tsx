@@ -40,47 +40,41 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Grid variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              alt: product.name,
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
-              priority: true,
-            }}
-          />
-        ))}
-      </Grid>
-      <Marquee variant="secondary">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard key={product.id} product={product} variant="slim" />
-        ))}
+      <div style={{ height: "300px" ,display:"flex",justifyContent:"center"}}><h1 style={{ fontSize: "72px"}}>FEATURED ITEMS</h1></div>
+      <Marquee variant="secondary" style={{minWidth:"max-content"}}>
+        
+      <a href='/search/pens'><img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/d9RGU2qZ6Ctkemwx%7Cjhgtf%20(1)%20-%20Copy.png" /></a>
+        
+       <a href='/search/apparel'> <img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/qav9dKP9qTjKHGna%7Cmama3.png" /></a>
+        
+        <a href='/search/badge-reel-buddy'><img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/iWuxbkecwsqAqKrJ%7Cs.png" /></a>
+      <a href='/search/pens'><img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/d9RGU2qZ6Ctkemwx%7Cjhgtf%20(1)%20-%20Copy.png" /></a>
+        
+       <a href='/search/apparel'> <img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/qav9dKP9qTjKHGna%7Cmama3.png" /></a>
+        
+        <a href='/search/badge-reel-buddy'><img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/iWuxbkecwsqAqKrJ%7Cs.png" /></a>
+        
+        
       </Marquee>
-      <Hero
-        headline=" Dessert dragée halvah croissant."
-        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake. "
-      />
-      <Grid layout="B" variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              alt: product.name,
-              width: i === 1 ? 1080 : 540,
-              height: i === 1 ? 1080 : 540,
-            }}
-          />
-        ))}
-      </Grid>
-      <Marquee>
+     
+      <div style={{ height: "100px", display: "flex", justifyContent: "space-evenly",marginTop:"10rem" }}><h1 style={{ fontSize: "72px" }}>SALE ITEMS</h1></div>
+    
+      <Grid  style={{ display: "flex" }}>
+       
+      
+        
+        
+         <a> <img src="https://cdn.chec.io/merchants/51390/assets/Vchf4BexaGegmGdl%7Ccandycanesnow.png"/></a>
+       
+          <a> <img src="https://cdn.chec.io/merchants/51390/assets/FcoqW1wKOeHDSU4C%7Cdfgbn_882ce8cd-bff8-48cc-a4d8-997384fee846%20-%20Copy.png"/></a>
+        
+        </Grid>
+      
+      {/* <Marquee>
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
-      </Marquee>
+      </Marquee> */}
       {/* <HomeAllProductsGrid
         newestProducts={products}
         categories={categories}
