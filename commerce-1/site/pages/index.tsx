@@ -41,7 +41,7 @@ export default function Home({
   return (
     <>
       <div style={{ height: "300px" ,display:"flex",justifyContent:"center"}}><h1 style={{ fontSize: "72px"}}>FEATURED ITEMS</h1></div>
-      <Marquee variant="secondary" style={{minWidth:"max-content"}}>
+      <Marquee variant="secondary" >
         
       <a href='/search/pens'><img style={{ width: 375, height: 375 }} src="https://cdn.chec.io/merchants/51390/assets/d9RGU2qZ6Ctkemwx%7Cjhgtf%20(1)%20-%20Copy.png" /></a>
         
@@ -59,7 +59,7 @@ export default function Home({
      
       <div style={{ height: "100px", display: "flex", justifyContent: "space-evenly",marginTop:"10rem" }}><h1 style={{ fontSize: "72px" }}>SALE ITEMS</h1></div>
     
-      <Grid  style={{ display: "flex" }}>
+      <Grid  >
        
       
         

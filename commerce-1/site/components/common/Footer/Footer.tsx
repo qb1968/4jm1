@@ -39,9 +39,34 @@ const Footer: FC<Props> = ({ className, pages }) => {
           
        
          <div className="flex items-center text-primary text-sm">
-            <span className="text-primary"></span>
-            <a href="https://medusa-test1.nyc3.digitaloceanspaces.com/4JM%20refund%20policy.pdf">Refund Policy</a>
+            <span className="text-primary">
+            <Link href="https://drive.google.com/file/d/1-t-VilATW7jNABpw03ccZawGUxjV7zus/view?usp=sharing" className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150" style={{fontSize:24}}>Refund Policy</Link>
+             </span>
+            
              
+            
+          </div>
+         <div className="flex items-center text-primary text-sm">
+            <span className="text-primary">
+            <Link href="https://drive.google.com/file/d/1dxLEbrUCiZIeYvXZxj_05OfohwJX2Tkk/view?usp=sharing" className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150" style={{fontSize:24}}>Terms of Service</Link>
+             </span>
+            
+             
+            
+          </div>
+         <div className="flex items-center text-primary text-sm">
+            <span className="text-primary">
+            <Link href="https://drive.google.com/file/d/1dxLEbrUCiZIeYvXZxj_05OfohwJX2Tkk/view?usp=sharing" className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150" style={{fontSize:24}}>Privacy Policy</Link>
+             </span>
+            
+             
+            
+          </div>
+         <div className="flex items-center text-primary text-sm">
+            <span className="text-primary">
+            <Link href="https://drive.google.com/file/d/1dxLEbrUCiZIeYvXZxj_05OfohwJX2Tkk/view?usp=sharing" className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150" style={{fontSize:24}}>Shipping Policy</Link>
+             </span>
+            
              
             
           </div>
