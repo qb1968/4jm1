@@ -7,11 +7,13 @@ import Image, { ImageProps } from 'next/image'
 import WishlistButton from '@components/wishlist/WishlistButton'
 import usePrice from '@framework/product/use-price'
 import ProductTag from '../ProductTag'
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 interface Props {
   className?: string
   product: Product
   noNameTag?: boolean
+ 
   imgProps?: Omit<ImageProps, 'src' | 'layout' | 'placeholder' | 'blurDataURL'>
   variant?: 'default' | 'slim' | 'simple'
 }
@@ -22,6 +24,7 @@ const ProductCard: FC<Props> = ({
   product,
   imgProps,
   className,
+
   noNameTag = false,
   variant = 'default',
 }) => {
@@ -55,7 +58,7 @@ const ProductCard: FC<Props> = ({
               alt={product.name || 'Product Image'}
               height={320}
               width={320}
-              {...imgProps}
+              
             />
           )}
         </>
@@ -109,7 +112,7 @@ const ProductCard: FC<Props> = ({
             name={product.name}
             price={`${price} ${product.price?.currencyCode}`}
           />
-          <div className={s.imageContainer}>
+          <div   className={s.imageContainer}>
             {product?.images && (
               <Image
                 alt={product.name || 'Product Image'}

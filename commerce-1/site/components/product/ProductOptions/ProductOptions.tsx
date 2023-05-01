@@ -18,7 +18,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({
     <div>
       {options.map((opt) => (
         <div className="pb-4" key={opt.displayName}>
-          <h2 className="uppercase font-medium text-sm tracking-wide">
+          <h2 className="   tracking-wide">
             {opt.displayName}
           </h2>
           <div role="listbox" className="flex flex-row py-4">

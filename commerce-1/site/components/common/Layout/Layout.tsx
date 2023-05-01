@@ -48,6 +48,8 @@ const Modal = dynamic(() => import('@components/ui/Modal'), {
   ssr: false,
 })
 
+
+
 interface Props {
   pageProps: {
     pages?: Page[]
@@ -119,6 +121,7 @@ const Layout: React.FC<Props> = ({
       <div className={cn(s.root)}>
         <Navbar links={navBarlinks} />
         <main className="fit">{children}</main>
+
         <Footer pages={pageProps.pages} />
         <ModalUI />
         <CheckoutProvider>

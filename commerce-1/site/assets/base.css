@@ -1,5 +1,5 @@
 :root {
-  --primary: #ffffff;
+ 
   --primary-2: #f1f3f5;
   --secondary: #000000;
   --secondary-2: #111;
@@ -19,7 +19,7 @@
   --pink-light: #ff379c;
   --magenta: #eb367f;
   --violet: #7928ca;
-  --violet-dark: #4c2889;
+  --custom: #d188a3a8;
   --accent-0: #fff;
   --accent-1: #fafafa;
   --accent-2: #eaeaea;
@@ -72,7 +72,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1f3F5;
+  background-color: #fff3F5;
   color: var(--text-primary);
   overscroll-behavior-x: none;
 }
@@ -81,6 +81,7 @@ body {
   position: relative;
   min-height: 100%;
   margin: 0;
+  background-color: #fff3F5;
 }
 
 a {

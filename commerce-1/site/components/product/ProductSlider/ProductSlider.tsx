@@ -78,7 +78,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
   const onNext = React.useCallback(() => slider.current?.next(), [slider])
 
   return (
-    <div className={cn(s.root, className)} ref={sliderContainerRef}>
+    <div className={cn(s.root, className)} ref={sliderContainerRef} style={{ backgroundColor: "rgb(209 136 163)" }}>
       <div
         ref={ref}
         className={cn(s.slider, { [s.show]: isMounted }, 'keen-slider')}
@@ -101,7 +101,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
         })}
       </div>
 
-      <a.div className={s.album} ref={thumbsContainerRef}>
+      <a.div className={s.album} ref={thumbsContainerRef} style={{backgroundColor:"#D188A3A8"}}>
         {slider &&
           Children.map(children, (child, idx) => {
             if (isValidElement(child)) {

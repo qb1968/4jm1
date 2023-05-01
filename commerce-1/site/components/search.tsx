@@ -131,9 +131,9 @@ export default function Search({ categories, brands }: SearchPropsType) {
                           onClick={(e) => handleClick(e, 'categories')}
                           className={
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
-                          }
+                          } style={{fontSize:"24px"}}
                         >
-                          All Categories
+                          Categories
                         </a>
                       </Link>
                     </li>
@@ -145,7 +145,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                           {
                             underline: activeCategory?.id === cat.id,
                           }
-                        )}
+                        )} style={{fontSize:"18px",color:"black",fontWeight:"400"}}
                       >
                         <Link
                           href={{
@@ -214,61 +214,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   aria-orientation="vertical"
                   aria-labelledby="options-menu"
                 >
-                  <ul>
-                    <li
-                      className={cn(
-                        'block text-sm leading-5 text-accent-4 lg:text-base lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
-                        {
-                          underline: !activeBrand?.name,
-                        }
-                      )}
-                    >
-                      <Link
-                        href={{
-                          pathname: getDesignerPath('', category),
-                          query,
-                        }}
-                        legacyBehavior
-                      >
-                        <a
-                          onClick={(e) => handleClick(e, 'brands')}
-                          className={
-                            'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
-                          }
-                        >
-                          All Designers
-                        </a>
-                      </Link>
-                    </li>
-                    {brands.map(({ path, name, id }: Brand) => (
-                      <li
-                        key={path}
-                        className={cn(
-                          'block text-sm leading-5 text-accent-4 hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
-                          {
-                            underline: activeBrand?.id === id,
-                          }
-                        )}
-                      >
-                        <Link
-                          href={{
-                            pathname: getDesignerPath(path, category),
-                            query,
-                          }}
-                          legacyBehavior
-                        >
-                          <a
-                            onClick={(e) => handleClick(e, 'brands')}
-                            className={
-                              'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
-                            }
-                          >
-                            {name}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                 
                 </div>
               </div>
             </div>

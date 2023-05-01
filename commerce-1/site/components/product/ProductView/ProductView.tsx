@@ -33,9 +33,9 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
               fontSize={32}
             />
             <div className={s.sliderContainer}>
-              <ProductSlider key={product.id}>
+              <ProductSlider key={product.id} >
                 {product.images.map((image, i) => (
-                  <div key={image.url} className={s.imageContainer}>
+                  <div key={image.url} className={s.imageContainer} style={{backgroundColor:"#fff3f5"}}>
                     <Image
                       className={s.img}
                       src={image.url!}
